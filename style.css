@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    height: 100vh;
+    background-image: url(image/MPNV1777.JPG);
+    background-size: cover;
+    background-position:center;
+
+}
+
+.Navebar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.Navebar a{
+    color:#fff;
+}
+
+
+.Navebar .logo{
+font-size: 2rem;
+font-weight: bold;
+
+}
+
+.Navebar .nav-links ul{
+    display: flex;
+}
+
+.Navebar .nav-links ul li{
+margin: 25px;
+
+}
+
+.active{
+    color: red;
+    font-weight: 600;
+}
+.menu{
+    color: #fff;
+}
+
+
+.Navebar .menu-hamburger{
+    position: absolute;
+    right: 25px;
+    top: 50px;
+    width: 33px;
+}
+
+
+@media screen and (max-width:900px) { 
+    .Navebar .menu-hamburger{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+}
